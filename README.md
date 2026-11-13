@@ -44,3 +44,53 @@ Android_OS_Manager_bash/
 │           ├── manifest.txt  # Simulated package metadata
 │           └── run.sh        # Background daemon script
 └── system.log                # Timestamped OS event log
+Getting Started
+Prerequisites
+Ubuntu Linux (or any POSIX-compliant Linux distribution with GNU Bash 4.0+)
+
+Installation & Execution
+Clone the repository:
+
+Bash
+git clone [https://github.com/shahfarnad/Android_OS_Manager_bash.git](https://github.com/shahfarnad/Android_OS_Manager_bash.git)
+cd Android_OS_Manager_bash
+Grant execute permissions:
+
+Bash
+chmod +x Android_Manager.sh
+Run the simulator:
+
+Bash
+./Android_Manager.sh
+Sample Terminal Output
+Plaintext
+     _              _           _     _    ___  ____  
+    / \   _ __   __| |_ __ ___ (_) __| |  / _ \/ ___| 
+   / _ \ | '_ \ / _` | '__/ _ \| |/ _` | | | | \___ \ 
+  / ___ \| | | | (_| | | | (_) | | (_| | | |_| |___) |
+ /_/   \_\_| |_|\__,_|_|  \___/|_|\__,_|  \___/|____/ 
+         LINUX KERNEL PROCESS & APP SIMULATOR
+=========================================================
+ Host: Ubuntu Linux   Installed Apps: 2   Active PIDs: 1
+=========================================================
+  [1] Install App (APK Simulator)
+  [2] View Installed Apps & Permissions
+  [3] Launch App (Spawn Background Process)
+  [4] Task Manager (Inspect & Force Stop PIDs)
+  [5] App Permissions (Lock / Unlock via chmod)
+  [6] Device Care (RAM & Disk Diagnostics)
+  [7] Uninstall App (Wipe App Sandbox)
+  [8] View System Logs (Logcat)
+  [9] Exit
+=========================================================
+Select an option [1-9]: 4
+
+--- [4] Android Task Manager (Active Processes) ---
+PID      | PROCESS IDENTIFIER
+---------|-----------------------------------
+4821     | AndroidApp_WhatsApp
+
+Enter PID to Force Stop (or press Enter to cancel): 4821
+[STOPPED] Process 4821 force stopped (SIGKILL sent).
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
